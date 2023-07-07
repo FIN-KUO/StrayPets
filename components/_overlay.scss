@@ -1,0 +1,93 @@
+.btn-overlay{
+  .overlay {
+      position: absolute;
+      top: 26;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: .5s ease;
+    }
+    &:hover{
+      .overlay {
+        opacity: 1;
+      }
+    }
+}
+
+.img-overlay{
+  position: relative;
+  z-index: 1;
+  .overlay{
+    position: absolute;
+    bottom: 24px;
+    left: 36px;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  &:hover{
+    .overlay{
+      opacity: 1;
+    }
+    .image{
+      opacity: 0.9;
+    }
+    @include media-breakpoint-down(lg){
+      .magnifying{
+        transform-origin: 0 0; //由左上角開始縮放
+        transform: scale(1.89);        
+      }
+      .overlay{
+        bottom: -250px;
+      }
+    }
+  }
+}
+
+.card-overlay{
+  box-shadow: 0px 4px 8px #00000014;  
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .3s ease;
+  }
+  &:hover{
+    box-shadow: 0px 8px 12px #00000026;
+    transition: box-shadow .5s ease;
+    transition-delay: .3s;
+    .overlay {
+      opacity: 1;
+    }
+    .card-link{
+      color: $primary;
+    }
+  }
+}
+
+.nav-overlay{
+  .nav-item{
+    .active{
+      color: var(--bs-nav-link-hover-color);
+      @include media-breakpoint-up(lg){
+        &::before{
+          content: "-";
+          margin-right: 13px;
+        }
+      }
+    } 
+  }  
+  a{
+    &:hover{
+      @include media-breakpoint-up(lg){
+        &::before{
+          content: "-";
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            //資料夾路徑
+            "savePath": "/css/"
+        }
+    ]
+}

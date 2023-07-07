@@ -1,0 +1,31 @@
+.mwt_border{
+	width:164px;
+	height:47px;
+	text-align:center;
+	background:#fff;
+	position:relative;
+	border: solid 2px #3A3A3A;
+    border-radius: 10px;
+	margin:30px;
+	padding:10px;
+    .arrow_b_int{
+        width:0px;
+        height:0px;
+        border-width:15px;
+        border-style:solid;
+        border-color:#3A3A3A transparent transparent transparent ;
+        position:absolute;
+        bottom:-30px;
+        right:62px;
+    }
+    .arrow_b_out{
+        width:0px;
+        height:0px;
+        border-width:15px;
+        border-style:solid;
+        border-color:#fff transparent transparent transparent ;
+        position:absolute;
+        bottom:-28px;
+        right:62px;
+    }
+}
